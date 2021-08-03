@@ -1,25 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import Product from './Product';
+import AddProduct from './addProduct';
+// import Counter from './couters';
+export default function App() {
+  // Tạo state
+  // Đổ dữ liệu từ state app xuống dưới component product
+  // Thông qua props
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Product />
+<AddProduct/>
+
     </div>
   );
-}
+  }
 
-export default App;
